@@ -1,0 +1,98 @@
+[
+  {
+    "category": "raw",
+    "name": "pulses",
+    "brand":"XYZ",
+    "price":63,
+    "dateOfManf":"",
+    "dateOfExp":""
+  },
+  {
+    "category": "raw",
+    "name": "rice",
+    "brand":"XYZ",
+    "price":48,
+    "dateOfManf":"",
+    "dateOfExp":""
+  },
+  {
+    "category": "raw",
+    "name": "flour",
+    "brand":"DIP",
+    "price":28,
+    "dateOfManf":"",
+    "dateOfExp":""
+  },
+  {
+    "category": "fruit",
+    "name": "watermelon",
+    "brand":"farmers",
+    "price":50,
+    "dateOfManf":"",
+    "dateOfExp":""
+  },
+  {
+    "category": "fruit",
+    "name": "mango",
+    "brand":"farmers",
+    "price":123,
+    "dateOfManf":"",
+    "dateOfExp":""
+  },
+  {
+    "category": "fruit",
+    "name": "coconut",
+    "brand":"farmers-1",
+    "price":33,
+    "dateOfManf":"",
+    "dateOfExp":""
+  },
+  {
+    "category": "fruit",
+    "name": "dates",
+    "brand":"FAR",
+    "price":58,
+    "dateOfManf":"",
+    "dateOfExp":""
+  },
+  {
+    "category": "dairy",
+    "name": "bread",
+    "brand":"BNN",
+    "price":23,
+    "dateOfManf":"",
+    "dateOfExp":""
+  },
+  {
+    "category": "dairy",
+    "name": "butter",
+    "brand":"BNN",
+    "price":40,
+    "dateOfManf":"",
+    "dateOfExp":""
+  },
+  {
+    "category": "dairy",
+    "name": "buttermilk",
+    "brand":"CNJ",
+    "price":20,
+    "dateOfManf":"",
+    "dateOfExp":""
+  },
+  {
+    "category": "processsed",
+    "name": "jam",
+    "brand":"XYZ",
+    "price":70,
+    "dateOfManf":"",
+    "dateOfExp":""
+  },
+  {
+    "category": "processed",
+    "name": "juice",
+    "brand":"PIY",
+    "price":65,
+    "dateOfManf":"",
+    "dateOfExp":""
+  }
+]

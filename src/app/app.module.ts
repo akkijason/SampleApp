@@ -9,6 +9,7 @@ import { ListingComponent } from './listing/listing.component';
 import { ListItemComponent } from './list-item/list-item.component';
 import { NavComponent } from './nav/nav.component';
 import { SearchFilterPipe } from './search-filter.pipe';
+import { from } from 'rxjs';
 
 
 const routes = [

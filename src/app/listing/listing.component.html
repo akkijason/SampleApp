@@ -5,7 +5,11 @@
 </div>
 <ul class="list-group">
 
-  <li class="list-group-item" *ngFor="let item of (prodArray | searchFilter:search)">{{item.name}}</li>
+  <li class="list-group-item" *ngFor="let item of (prodArray | searchFilter:search)">
+    <label class="col-sm-6">{{item.name}}</label>
+    <!-- <button class="btn btn-danger" (click)="deleteItem(item)"><i class="fas fa-trash-alt"></i></button> -->
+    <i class="fas fa-trash-alt" style="color:crimson; cursor: pointer; font-size: 20px;" (click)="deleteItem(item)"></i>
+  </li>
 
 </ul>
 

@@ -17,31 +17,41 @@ export class ListingComponent implements OnInit {
 
   constructor(private _api: ApiService) {
     this._api.getJsonData().subscribe(res => {
-    res.forEach(val => {
-      this.prodArray.push(val);
+      res.forEach(val => {
+        this.prodArray.push(val);
+      });
     });
-  });
 
-}
+  }
 
   ngOnInit() {
-
-    // this._api.getJsonData().subscribe(res => {
-    //   res.forEach(val => {
-    //     console.log(`product name is ${val.name}`);
-    //     this.initProdArray.push(val);
-    //   });
-    // });
-    // this.initProdArray.push(new Product('raw', 'millets', 'CSD', 20));
-    // this.prodArray = this.initProdArray;
     console.log(`init called`);
+    this.readPostedData();
+  }
+
+  deleteItem(param: Product) {
+    if (this.prodArray.filter(item => item.name === param.name)) {
+      let arryIdx = this.prodArray.indexOf(param);
+      this.prodArray.splice(arryIdx, 1);
+    }
+  }
+
+  private readPostedData() {
     if (localStorage.getItem('tempData') !== null) {
       let temp = JSON.parse(localStorage.getItem('tempData'));
       this.prodArray.push(temp);
       console.log(`now array is ${this.prodArray[0]}`);
-      localStorage.clear();
-    }
 
+      setTimeout(() => {
+        this.clearLocalStorage();
+      }, 120000);
+
+    }
   }
+
+  private clearLocalStorage() {
+    localStorage.clear();
+  }
+
 
 }
